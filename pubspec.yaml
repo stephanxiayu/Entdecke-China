@@ -86,6 +86,8 @@ flutter:
     - lib/assets/cn9.png
     - lib/assets/cn10.png
     - lib/assets/cn2.png
+    - lib/assets/cn15.png
+    - lib/assets/cn16.png
     - lib/assets/cn14.jpg
     - lib/assets/mauer1.png
     - lib/assets/mauer2.png
@@ -117,6 +119,7 @@ flutter:
     - lib/assets/xinli4.png
     - lib/assets/xinli5.png
     - lib/assets/xinli6.png
+    - lib/assets/xinli7.jpg
  
    
     

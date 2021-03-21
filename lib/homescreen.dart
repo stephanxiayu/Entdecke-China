@@ -6,6 +6,7 @@ import 'package:china/hongkong.dart';
 import 'package:china/shanghaivideo.dart';
 import 'package:china/shijiazhuang.dart';
 import 'package:china/uibevideo.dart';
+import 'package:china/wedding.dart';
 import 'package:china/xinli.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -437,6 +438,50 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: Center(
                           child: Text(
                             "Xin LI",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 30),])]),
+                   Stack(children: [
+            Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage("lib/assets/cn15.png"),
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+            Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Center(
+                    child: TextButton(
+                      onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Wedding(),
+                        ),
+                      ),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.transparent,
+                          borderRadius: BorderRadius.circular(25),
+                          border: Border.all(width: 3, color: Colors.white),
+                        ),
+                        height: 50,
+                        width: MediaQuery.of(context).size.width * 0.7,
+                        child: Center(
+                          child: Text(
+                            "Hochzeit auf dem Land",
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 20,

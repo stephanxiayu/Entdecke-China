@@ -72,32 +72,26 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
               image: 'lib/assets/cn9.png',
               title: '  Create \nBeautiful \nMoments'),
                 makePage(
-              page: 5,
+              page: 6,
               image: 'lib/assets/cn10.png',
               title: '  Create \nBeautiful \nMoments'),
                 makePage(
-              page: 5,
-              image: 'lib/assets/cn9.png',
-              title: '  Create \nBeautiful \nMoments'),
-                makePage(
-              page: 6,
-              image: 'lib/assets/cn9.png',
-              title: '  Create \nBeautiful \nMoments'),  makePage(
               page: 7,
-              image: 'lib/assets/cn9.png',
+              image: 'lib/assets/cn16.png',
               title: '  Create \nBeautiful \nMoments'),
                 makePage(
               page: 8,
-              image: 'lib/assets/cn9.png',
-              title: '  Create \nBeautiful \nMoments'),
-                makePage(
+              image: 'lib/assets/xinli7.jpg',
+              title: '  Create \nBeautiful \nMoments'), 
+               makePage(
               page: 9,
               image: 'lib/assets/cn9.png',
               title: '  Create \nBeautiful \nMoments'),
-               makePage(
+                makePage(
               page: 10,
               image: 'lib/assets/cn9.png',
               title: '  Create \nBeautiful \nMoments'),
+                
         ],
       ),
     );

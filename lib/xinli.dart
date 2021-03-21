@@ -2,7 +2,7 @@ import 'package:china/city_animation.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:video_player/video_player.dart';
+
 class XinLi extends StatefulWidget {
   @override
   _XinLiState createState() => _XinLiState();
@@ -52,31 +52,31 @@ class _XinLiState extends State<XinLi>
           makePage(
               page: 2,
               image: 'lib/assets/xinli2.png',
-              title: 'Künstler in Peking',
+              title: 'Mensch',
               description:
                   'In Peking existiert eine große Künstler-Szene und eine dieser Künstler ist Ma Yun'),
           makePage(
               page: 3,
               image: 'lib/assets/xinli3.png',
-              title: 'Kunst in China',
+              title: 'Cinesin',
               description:
                   "Sedona is regularly described as one of America's most beautiful places. Nowhere else will you find a landscape as dramatically colorful."),
           makePage(
               page: 4,
               image: 'lib/assets/xinli4.png',
-              title: 'Werke',
+              title: 'Studiert in Deutschland',
               description:
                   "Savannah, with its Spanish moss, Southern accents and creepy graveyards, is a lot like Charleston, South Carolina. But this city about 100 miles to the south has an eccentric streak."),
           makePage(
               page: 5,
               image: 'lib/assets/xinli5.png',
-              title: '798 Künstlervirtel',
+              title: 'Take it Easy',
               description:
                   "Savannah, with its Spanish moss, Southern accents and creepy graveyards, is a lot like Charleston, South Carolina. But this city about 100 miles to the south has an eccentric streak."),
           makePage(
               page: 6,
               image: 'lib/assets/xinli6.png',
-              title: 'HuTongs',
+              title: 'Zwischen den Kulturen',
               description:
                   "Savannah, with its Spanish moss, Southern accents and creepy graveyards, is a lot like Charleston, South Carolina. But this city about 100 miles to the south has an eccentric streak."),
           makePage(

@@ -1,3 +1,4 @@
+import 'package:china/art798.dart';
 import 'package:china/city_animation.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -172,7 +173,12 @@ class _GeschichteState extends State<Geschichte>
                       ),
                       SizedBox(
                         child: TextButton(
-                          onPressed: () {},
+                          onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ART(),
+                        ),
+                      ),
                           child: Text(
                             "Mehr erfahren",
                             style: TextStyle(color: Colors.white),
