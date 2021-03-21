@@ -23,7 +23,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   PageController _pageController;
-  int totalPage = 5;
+  int totalPage = 10;
 
   void _onScroll() {}
   @override
@@ -50,17 +50,17 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
         children: <Widget>[
           makePage(
             page: 1,
-            image: 'lib/assets/china1.png',
+            image: 'lib/assets/cn4.png',
             title: 'FIT.FANS',
           ),
           makePage(
             page: 2,
-            image: 'lib/assets/peking5.png',
+            image: 'lib/assets/cn7.png',
             title: "Training",
           ),
           makePage(
             page: 3,
-            image: 'lib/assets/menschen2.png',
+            image: 'lib/assets/cn6.png',
             title: 'Ernährung',
           ),
           makePage(
@@ -69,7 +69,34 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
               title: 'Find \nYour \nSelf'),
           makePage(
               page: 5,
-              image: 'lib/assets/chongqing4.png',
+              image: 'lib/assets/cn9.png',
+              title: '  Create \nBeautiful \nMoments'),
+                makePage(
+              page: 5,
+              image: 'lib/assets/cn10.png',
+              title: '  Create \nBeautiful \nMoments'),
+                makePage(
+              page: 5,
+              image: 'lib/assets/cn9.png',
+              title: '  Create \nBeautiful \nMoments'),
+                makePage(
+              page: 6,
+              image: 'lib/assets/cn9.png',
+              title: '  Create \nBeautiful \nMoments'),  makePage(
+              page: 7,
+              image: 'lib/assets/cn9.png',
+              title: '  Create \nBeautiful \nMoments'),
+                makePage(
+              page: 8,
+              image: 'lib/assets/cn9.png',
+              title: '  Create \nBeautiful \nMoments'),
+                makePage(
+              page: 9,
+              image: 'lib/assets/cn9.png',
+              title: '  Create \nBeautiful \nMoments'),
+               makePage(
+              page: 10,
+              image: 'lib/assets/cn9.png',
               title: '  Create \nBeautiful \nMoments'),
         ],
       ),

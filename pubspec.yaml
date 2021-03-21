@@ -77,7 +77,11 @@ flutter:
     - lib/assets/peking11.png
     - lib/assets/hk1.png
     - lib/assets/tv.png
-  
+    - lib/assets/cn4.png
+    - lib/assets/cn6.png
+    - lib/assets/cn7.png
+    - lib/assets/cn9.png
+    - lib/assets/cn10.png
     - lib/assets/mauer1.png
     - lib/assets/mauer2.png
     - lib/assets/mauer3.png
