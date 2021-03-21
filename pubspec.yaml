@@ -28,6 +28,9 @@ dependencies:
   sliding_up_panel: ^1.0.2
   youtube_player_flutter: ^6.1.0+7
   video_player: ^1.0.1
+  url_launcher: ^5.7.10
+ 
+
   
 
 
@@ -82,6 +85,8 @@ flutter:
     - lib/assets/cn7.png
     - lib/assets/cn9.png
     - lib/assets/cn10.png
+    - lib/assets/cn2.png
+    - lib/assets/cn14.jpg
     - lib/assets/mauer1.png
     - lib/assets/mauer2.png
     - lib/assets/mauer3.png
@@ -105,6 +110,13 @@ flutter:
     - lib/assets/aben2.png
     - lib/assets/menschen2.png
     - lib/assets/ge1.png
+    - lib/assets/xinli.jpg
+    - lib/assets/xinli1.png
+    - lib/assets/xinli2.png
+    - lib/assets/xinli3.png
+    - lib/assets/xinli4.png
+    - lib/assets/xinli5.png
+    - lib/assets/xinli6.png
  
    
     
