@@ -4,6 +4,8 @@ import 'package:china/beijingvideo.dart';
 import 'package:china/chinesische_mauer.dart';
 import 'package:china/chongqing.dart';
 import 'package:china/geschichte.dart';
+import 'package:china/hongkong.dart';
+import 'package:china/shijiazhuang.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Center(
-            child: PageView(scrollDirection: Axis.vertical, children: [
+            child: PageView(scrollDirection: Axis.horizontal, children: [
       Stack(
         children:[ Container(
             decoration: BoxDecoration(
@@ -94,7 +96,7 @@ class _HomeScreenState extends State<HomeScreen> {
               onPressed: () => Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => Geschichte(),
+                  builder: (context) => Chongqing(),
                 ),
               ),
               child: Container(
@@ -148,7 +150,7 @@ class _HomeScreenState extends State<HomeScreen> {
               onPressed: () => Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => Geschichte(),
+                  builder: (context) => Mauer(),
                 ),
               ),
               child: 
@@ -230,7 +232,105 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           SizedBox(height: 30),
-                      ])])  ])  ),
+                      ])]),
+                      Stack(
+        children:[ Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("lib/assets/hk1.png"),
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+         Column(
+                         crossAxisAlignment: CrossAxisAlignment.end,
+  mainAxisSize: MainAxisSize.max,
+  mainAxisAlignment: MainAxisAlignment.end,
+           children: [
+                    
+          Center(
+            child: TextButton(
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Hongkong(),
+                ),
+              ),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.transparent,
+                  borderRadius: BorderRadius.circular(25),
+                  border: Border.all(
+                      width: 3, color: Colors.white),
+                ),
+                height: 50,
+                width:
+                    MediaQuery.of(context).size.width * 0.7,
+                child: Center(
+                  child: Text(
+                    "HongKong",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+          SizedBox(height: 30),
+                      ])]),
+                      Stack(
+        children:[ Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("lib/assets/tv.png"),
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+         Column(
+                         crossAxisAlignment: CrossAxisAlignment.end,
+  mainAxisSize: MainAxisSize.max,
+  mainAxisAlignment: MainAxisAlignment.end,
+           children: [
+                    
+          Center(
+            child: TextButton(
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ShijiazhuangVideo(),
+                ),
+              ),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.transparent,
+                  borderRadius: BorderRadius.circular(25),
+                  border: Border.all(
+                      width: 3, color: Colors.white),
+                ),
+                height: 50,
+                width:
+                    MediaQuery.of(context).size.width * 0.7,
+                child: Center(
+                  child: Text(
+                    "Shijiazhuang",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+          SizedBox(height: 30),
+                      ])]),
+                        ]) ,
+                       ),
                       
                     
     );

@@ -76,7 +76,7 @@ flutter:
     - lib/assets/peking10.png
     - lib/assets/peking11.png
     - lib/assets/hk1.png
-   
+    - lib/assets/tv.png
   
     - lib/assets/mauer1.png
     - lib/assets/mauer2.png
@@ -96,7 +96,7 @@ flutter:
     - lib/assets/china2.png
     - lib/assets/chongqing1.png
     - lib/assets/chongqing4.png
-  
+    - lib/assets/china5.png
     - lib/assets/aben1.png
     - lib/assets/aben2.png
     - lib/assets/menschen2.png

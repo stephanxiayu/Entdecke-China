@@ -10,6 +10,7 @@ class _HongkongState extends State<Hongkong> {
   YoutubePlayerController _controller = YoutubePlayerController(
       initialVideoId: 'gYO1uk7vIcc', // id youtube video
       flags: YoutubePlayerFlags(
+        autoPlay: true,
         mute: false,
         forceHD: true,
       ));
@@ -18,21 +19,23 @@ class _HongkongState extends State<Hongkong> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.black,
-        body: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SingleChildScrollView(
-                child: Column(
-                  children: <Widget>[
-                    YoutubePlayer(
-                      controller: _controller,
-                      showVideoProgressIndicator: true,
-                      progressIndicatorColor: Colors.black,
-                    ),
-                  ],
+        body: SingleChildScrollView(
+                  child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SingleChildScrollView(
+                  child: Column(
+                    children: <Widget>[
+                      YoutubePlayer(
+                        controller: _controller,
+                        showVideoProgressIndicator: true,
+                        progressIndicatorColor: Colors.black,
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-            ]));
+              ]),
+        ));
   }
 }
