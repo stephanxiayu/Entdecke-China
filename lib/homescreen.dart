@@ -1,6 +1,9 @@
 
 
 import 'package:china/beijingvideo.dart';
+import 'package:china/chinesische_mauer.dart';
+import 'package:china/chongqing.dart';
+import 'package:china/geschichte.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -24,11 +27,22 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
           ),
-          SizedBox(height: 100,),
-                Align(
-            alignment: Alignment. center,
-           
-             child: Container(
+         
+        Column(
+                         crossAxisAlignment: CrossAxisAlignment.end,
+  mainAxisSize: MainAxisSize.max,
+  mainAxisAlignment: MainAxisAlignment.end,
+           children: [
+                    
+          Center(
+            child: TextButton(
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Geschichte(),
+                ),
+              ),
+              child:  Container(
                 decoration: BoxDecoration(
                                     color: Colors.transparent,
                                     borderRadius: BorderRadius.circular(25),
@@ -55,7 +69,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                     ),
                                   ),
               
-                  ),SizedBox(height: 50,)  ] ),
+                  ),),SizedBox(height: 30),
+                  ]),
+                  ] ),
+                 
         Stack(
         children:[ Container(
             decoration: BoxDecoration(
@@ -65,11 +82,22 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
           ),
-          SizedBox(height: 100,),
-                Align(
-            alignment: Alignment. center,
-           
-             child: Container(
+         
+           Column(
+                         crossAxisAlignment: CrossAxisAlignment.end,
+  mainAxisSize: MainAxisSize.max,
+  mainAxisAlignment: MainAxisAlignment.end,
+           children: [
+                    
+          Center(
+            child: TextButton(
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Geschichte(),
+                ),
+              ),
+              child: Container(
                 decoration: BoxDecoration(
                                     color: Colors.transparent,
                                     borderRadius: BorderRadius.circular(25),
@@ -79,7 +107,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                   height: 50,
                                   width:
                                       MediaQuery.of(context).size.width * 0.7,
-                                  child: Center(
+                                  child: TextButton(onPressed:  () => Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => Chongqing(),)),
                                     child: Text(
                                       "Entdecke Chongching",
                                       style: TextStyle(
@@ -90,6 +121,120 @@ class _HomeScreenState extends State<HomeScreen> {
                                     ),
                                   ),
               
-          ))  ] ) ] )));
+          )),
+          ),SizedBox(height: 30),
+          ]),
+
+            ] ),
+      
+            Stack(
+        children:[ Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("lib/assets/mauer4.png"),
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+         
+           Column(
+                         crossAxisAlignment: CrossAxisAlignment.end,
+  mainAxisSize: MainAxisSize.max,
+  mainAxisAlignment: MainAxisAlignment.end,
+           children: [
+                    
+          Center(
+            child: TextButton(
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Geschichte(),
+                ),
+              ),
+              child: 
+           
+           Container(
+                decoration: BoxDecoration(
+                                    color: Colors.transparent,
+                                    borderRadius: BorderRadius.circular(25),
+                                    border: Border.all(
+                                        width: 3, color: Colors.white),
+                                  ),
+                                  height: 50,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.7,
+                                  child: TextButton(onPressed: () => Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => Mauer(),)),
+                                    child: Text(
+                                      "Chinesische Mauer",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ),
+              
+          ), 
+         )),SizedBox(height: 30),
+         ]) ] ),
+         
+       
+         
+         Stack(
+        children:[ Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("lib/assets/ma4.jpg"),
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+         Column(
+                         crossAxisAlignment: CrossAxisAlignment.end,
+  mainAxisSize: MainAxisSize.max,
+  mainAxisAlignment: MainAxisAlignment.end,
+           children: [
+                    
+          Center(
+            child: TextButton(
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Geschichte(),
+                ),
+              ),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.transparent,
+                  borderRadius: BorderRadius.circular(25),
+                  border: Border.all(
+                      width: 3, color: Colors.white),
+                ),
+                height: 50,
+                width:
+                    MediaQuery.of(context).size.width * 0.7,
+                child: Center(
+                  child: Text(
+                    "Menschen kennenlernen",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+          SizedBox(height: 30),
+                      ])])  ])  ),
+                      
+                    
+    );
+          
+           
   }
 }
