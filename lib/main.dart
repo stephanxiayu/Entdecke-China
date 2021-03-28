@@ -23,7 +23,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   PageController _pageController;
-  int totalPage = 10;
+  int totalPage = 6;
 
   void _onScroll() {}
   @override
@@ -75,22 +75,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
               page: 6,
               image: 'lib/assets/cn10.png',
               title: '  Create \nBeautiful \nMoments'),
-                makePage(
-              page: 7,
-              image: 'lib/assets/cn16.png',
-              title: '  Create \nBeautiful \nMoments'),
-                makePage(
-              page: 8,
-              image: 'lib/assets/xinli7.jpg',
-              title: '  Create \nBeautiful \nMoments'), 
-               makePage(
-              page: 9,
-              image: 'lib/assets/cn9.png',
-              title: '  Create \nBeautiful \nMoments'),
-                makePage(
-              page: 10,
-              image: 'lib/assets/cn9.png',
-              title: '  Create \nBeautiful \nMoments'),
+               
                 
         ],
       ),

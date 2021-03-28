@@ -1,4 +1,5 @@
 import 'package:china/city_animation.dart';
+import 'package:china/xinli_video.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -13,13 +14,7 @@ class _XinLiState extends State<XinLi>
   PageController _pageController;
   int totalPage = 10;
 
- launchURL(String url) async {
-    if (await canLaunch(url)) {
-      await launch(url, forceWebView: true);
-    } else {
-      throw 'Could not launch $url';
-    }
- }
+
    
   void _onScroll() {}
 
@@ -181,10 +176,14 @@ class _XinLiState extends State<XinLi>
                       ),
                       SizedBox(
                         child: TextButton(
-                          onPressed:  () {
-    const url = 'https://www.aiweiwei.com/';
-    launchURL(url);
-},
+                          onPressed:  (){
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => XinliVideo(),
+              ),
+            );
+          },
                           child: Text(
                             "Mehr erfahren",
                             style: TextStyle(color: Colors.white),
