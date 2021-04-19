@@ -1,4 +1,5 @@
 import 'package:china/homescreen.dart';
+import 'package:china/startseite.dart';
 
 
 import 'package:flutter/material.dart';
@@ -9,9 +10,9 @@ void main()=>
   runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
       home: HomePage(),
-      theme: ThemeData(
+      theme: ThemeData.dark(
         // Define the default brightness and colors.
-        brightness: Brightness.dark,
+     
        
       )));
 
@@ -141,7 +142,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                 onPressed: () => Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => HomeScreen(),
+                                    builder: (context) => StartSeite(),
                                   ),
                                 ),
                                 child: Container(
