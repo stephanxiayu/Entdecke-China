@@ -1,4 +1,5 @@
 import 'package:china/homescreen.dart';
+import 'package:china/menschen/menschen.dart';
 import 'package:flutter/material.dart';
 
 class StartSeite extends StatelessWidget {
@@ -69,7 +70,7 @@ class StartSeite extends StatelessWidget {
                         onPressed: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => HomeScreen(),
+                            builder: (context) => MenschenUebersicht(),
                           ),
                         ),
                         child: Container(

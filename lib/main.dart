@@ -105,7 +105,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                               page.toString(),
                               style: TextStyle(
                                   color: Colors.white,
-                                  fontSize: 30,
+                                  fontSize: 50,
                                   fontWeight: FontWeight.bold),
                             ),
                             Align(

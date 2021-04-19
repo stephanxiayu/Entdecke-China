@@ -1,10 +1,10 @@
 import 'package:china/beijingvideo.dart';
 import 'package:china/chinesische_mauer.dart';
-import 'package:china/chongqing.dart';
+import 'package:china/st%C3%A4dte/chongqing.dart';
 import 'package:china/geschichte.dart';
-import 'package:china/hongkong.dart';
-import 'package:china/shanghaivideo.dart';
-import 'package:china/shijiazhuang.dart';
+import 'package:china/st%C3%A4dte/hongkong.dart';
+import 'package:china/st%C3%A4dte/shanghaivideo.dart';
+import 'package:china/st%C3%A4dte/shijiazhuang.dart';
 import 'package:china/uibevideo.dart';
 import 'package:china/wedding.dart';
 import 'package:china/xinli.dart';

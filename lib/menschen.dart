@@ -1,4 +1,4 @@
-import 'package:china/peking.dart';
+import 'package:china/st%C3%A4dte/peking.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
