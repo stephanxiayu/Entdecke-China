@@ -1,4 +1,4 @@
-import 'package:china/homescreen.dart';
+
 import 'package:china/startseite.dart';
 
 
@@ -131,12 +131,15 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                           ),
                         ),
                         Align(
-                          alignment: Alignment.centerLeft,
+                          alignment: Alignment.center,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                        
                               SizedBox(height: 5),
+                         
+                         Center(child: Icon(Icons.more_horiz_rounded,size: 50,)),
+                         SizedBox(height: 20,),
                          
                               TextButton(
                                 onPressed: () => Navigator.push(
@@ -157,10 +160,10 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                       MediaQuery.of(context).size.width * 0.7,
                                   child: Center(
                                     child: Text(
-                                      "Entdecken",
+                                      "Entdecke China",
                                       style: TextStyle(
                                         color: Colors.white,
-                                        fontSize: 40,
+                                        fontSize: 25,
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
