@@ -29,7 +29,7 @@ dependencies:
   youtube_player_flutter: ^6.1.0+7
   video_player: ^1.0.1
   url_launcher: ^5.7.10
-  hover_effect:  
+  
  
 
   
@@ -123,6 +123,7 @@ flutter:
     - lib/assets/xinli7.jpg
     - lib/assets/d8.png
     - lib/assets/d9.png
+    - lib/assets/d10.png
  
    
     

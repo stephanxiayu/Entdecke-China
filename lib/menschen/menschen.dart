@@ -1,9 +1,9 @@
 
 import 'package:china/menschen/ma_yun.dart';
 import 'package:china/menschen/xin_li.dart';
-import 'package:china/testbutton/button.dart';
+
 import 'package:china/wedding.dart';
-import 'package:hover_effect/hover_effect.dart';
+
 import 'package:flutter/material.dart';
 
 class MenschenUebersicht extends StatelessWidget {
@@ -141,26 +141,7 @@ class MenschenUebersicht extends StatelessWidget {
                     SizedBox(height: 10),
                   ]),
             ),
-            Center(
-              child: Container(
-              width: 200,
-              height: 50,
-              child: HoverCard(
-                builder: (context, hovering) {
-                  return Container(
-                    color: Colors.transparent,
-                   
-                  );
-                },
-                depth: 10,
-                depthColor: Colors.grey[500],
-                shadow: BoxShadow(color: Colors.red,
-                blurRadius: 40,
-                spreadRadius: -15,
-                offset: Offset(0,40)),
-              ),
-          ),
-            )
+           
             
             ]),
              ]) ),

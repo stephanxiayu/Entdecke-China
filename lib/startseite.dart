@@ -1,3 +1,4 @@
+import 'package:china/history/geschichte.dart';
 import 'package:china/homescreen.dart';
 import 'package:china/menschen/menschen.dart';
 import 'package:flutter/material.dart';
@@ -105,7 +106,12 @@ class StartSeite extends StatelessWidget {
                   children: [
                     Center(
                       child: TextButton(
-                        onPressed: () {},
+                       onPressed: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Geschichte(),
+                          ),
+                        ),
                         child: Container(
                           decoration: BoxDecoration(
                             color: Colors.transparent,
