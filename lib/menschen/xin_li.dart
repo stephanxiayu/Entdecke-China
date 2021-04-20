@@ -1,5 +1,5 @@
 import 'package:china/city_animation.dart';
-import 'package:china/xinli_video.dart';
+import 'package:china/videos/xinli_video.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

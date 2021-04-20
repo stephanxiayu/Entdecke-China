@@ -1,13 +1,13 @@
 import 'package:china/beijingvideo.dart';
 import 'package:china/chinesische_mauer.dart';
 import 'package:china/st%C3%A4dte/chongqing.dart';
-import 'package:china/geschichte.dart';
+
 import 'package:china/st%C3%A4dte/hongkong.dart';
 import 'package:china/st%C3%A4dte/shanghaivideo.dart';
 import 'package:china/st%C3%A4dte/shijiazhuang.dart';
-import 'package:china/uibevideo.dart';
-import 'package:china/wedding.dart';
-import 'package:china/xinli.dart';
+
+import 'package:china/videos/uibevideo.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -38,12 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 children: [
                   Center(
                     child: TextButton(
-                      onPressed: () => Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => Geschichte(),
-                        ),
-                      ),
+                      onPressed: () {},
                       child: Container(
                         decoration: BoxDecoration(
                           color: Colors.transparent,
@@ -173,52 +168,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   SizedBox(height: 30),
                 ])
           ]),
-          Stack(children: [
-            Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("lib/assets/ma4.jpg"),
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-            Column(
-                crossAxisAlignment: CrossAxisAlignment.end,
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Center(
-                    child: TextButton(
-                      onPressed: () => Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => Geschichte(),
-                        ),
-                      ),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.transparent,
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(width: 3, color: Colors.white),
-                        ),
-                        height: 50,
-                        width: MediaQuery.of(context).size.width * 0.7,
-                        child: Center(
-                          child: Text(
-                            "Menschen kennenlernen",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  SizedBox(height: 30),
-                ])
-          ]),
+        
           Stack(children: [
             Container(
               decoration: BoxDecoration(
@@ -406,93 +356,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   SizedBox(height: 30),])]),
                   Stack(children: [
-            Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("lib/assets/xinli1.png"),
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-            Column(
-                crossAxisAlignment: CrossAxisAlignment.end,
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Center(
-                    child: TextButton(
-                      onPressed: () => Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => XinLi(),
-                        ),
-                      ),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.transparent,
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(width: 3, color: Colors.white),
-                        ),
-                        height: 50,
-                        width: MediaQuery.of(context).size.width * 0.7,
-                        child: Center(
-                          child: Text(
-                            "Xin LI",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  SizedBox(height: 30),])]),
-                   Stack(children: [
-            Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage("lib/assets/cn15.png"),
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-            Column(
-                crossAxisAlignment: CrossAxisAlignment.end,
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Center(
-                    child: TextButton(
-                      onPressed: () => Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => Wedding(),
-                        ),
-                      ),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.transparent,
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(width: 3, color: Colors.white),
-                        ),
-                        height: 50,
-                        width: MediaQuery.of(context).size.width * 0.7,
-                        child: Center(
-                          child: Text(
-                            "Hochzeit auf dem Land",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  SizedBox(height: 30),])])
+                  ]),
         ]),
       ),
     );

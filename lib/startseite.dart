@@ -105,12 +105,7 @@ class StartSeite extends StatelessWidget {
                   children: [
                     Center(
                       child: TextButton(
-                        onPressed: () => Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => HomeScreen(),
-                          ),
-                        ),
+                        onPressed: () {},
                         child: Container(
                           decoration: BoxDecoration(
                             color: Colors.transparent,
@@ -143,12 +138,7 @@ class StartSeite extends StatelessWidget {
                   children: [
                     Center(
                       child: TextButton(
-                        onPressed: () => Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => HomeScreen(),
-                          ),
-                        ),
+                     onPressed: () {},
                         child: Container(
                           decoration: BoxDecoration(
                             color: Colors.transparent,
@@ -181,12 +171,7 @@ class StartSeite extends StatelessWidget {
                     children: [
                   Center(
                     child: TextButton(
-                      onPressed: () => Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => HomeScreen(),
-                        ),
-                      ),
+                   onPressed: () {},
                       child: Container(
                         decoration: BoxDecoration(
                           color: Colors.transparent,
@@ -220,12 +205,7 @@ class StartSeite extends StatelessWidget {
                   children: [
                     Center(
                       child: TextButton(
-                        onPressed: () => Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => HomeScreen(),
-                          ),
-                        ),
+                    onPressed: () {},
                         child: Container(
                           decoration: BoxDecoration(
                             color: Colors.transparent,
