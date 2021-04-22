@@ -31,6 +31,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             ),
+              Positioned(child: AppBar(
+      backgroundColor: Colors.transparent,
+      elevation: 8,
+      )),
             Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 mainAxisSize: MainAxisSize.max,
@@ -77,6 +81,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             ),
+              Positioned(child: AppBar(
+      backgroundColor: Colors.transparent,
+      elevation: 8,
+      )),
             Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 mainAxisSize: MainAxisSize.max,
@@ -127,6 +135,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             ),
+              Positioned(child: AppBar(
+      backgroundColor: Colors.transparent,
+      elevation: 8,
+      )),
             Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 mainAxisSize: MainAxisSize.max,
@@ -178,6 +190,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             ),
+              Positioned(child: AppBar(
+      backgroundColor: Colors.transparent,
+      elevation: 8,
+      )),
             Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 mainAxisSize: MainAxisSize.max,
@@ -224,6 +240,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             ),
+              Positioned(child: AppBar(
+      backgroundColor: Colors.transparent,
+      elevation: 8,
+      )),
             Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 mainAxisSize: MainAxisSize.max,
@@ -270,6 +290,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             ),
+              Positioned(child: AppBar(
+      backgroundColor: Colors.transparent,
+      elevation: 8,
+      )),
             Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 mainAxisSize: MainAxisSize.max,
@@ -320,6 +344,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             ),
+              Positioned(child: AppBar(
+      backgroundColor: Colors.transparent,
+      elevation: 8,
+      )),
             Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 mainAxisSize: MainAxisSize.max,
