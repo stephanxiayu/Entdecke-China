@@ -9,8 +9,7 @@ class MainImageWidget extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
-        child: Center(
-          child: Text(
+        child: Positioned(child: AppBar(title: Text(
             'Explore Shanghai',
             style: TextStyle(
               fontSize: 30,
@@ -18,6 +17,10 @@ class MainImageWidget extends StatelessWidget {
               color: Colors.white,
             ),
           ),
-        ),
-      );
+      backgroundColor: Colors.transparent,
+      elevation: 8,
+      )),
+           
+        );
+      
 }

@@ -23,11 +23,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-        appBar: AppBar(
-          title: Text("Test"),
-          centerTitle: true,
-          elevation: 2,
-        ),
+     
         body: SlidingUpPanel(
           
           controller: panelController,
@@ -54,9 +50,7 @@ class _HomePageState extends State<HomePage> {
             
             children: [
               
-              TabWidget(scrollController: scrollController), 
-            
-              TabWidget(scrollController: scrollController),
+          
             ],
           ),
         ),
@@ -76,8 +70,7 @@ class _HomePageState extends State<HomePage> {
            
               tabs: [
                 
-                Tab(child: Text('Shanghai')),
-                Tab(child: Text('上海')),
+               
               ],
             ),
           ),
