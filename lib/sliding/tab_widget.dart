@@ -34,7 +34,7 @@ class _TabWidgetState extends State<TabWidget> {
 2. "When you reach the end of your rope, tie a knot in it and hang on." -Franklin D. Roosevelt
 3. "Always remember that you are absolutely unique. Just like everyone else." -Margaret Mead
 4. "Don't judge each day by the harvest you reap but by the seeds that you plant." -Robert Louis Stevenson
-5. "The future belongs to those who believe in the beauty of their dreams." -Eleanor Roosevelt'''),
+5. "The future belongs to those who believe in the beauty of their dreams." -Eleanor Roosevelt''', style: TextStyle(color:Colors.black ),),
 TextButton(onPressed: (){}, child: Text("Video"))
         ]
       );

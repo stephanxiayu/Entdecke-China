@@ -10,7 +10,7 @@ class MainImageWidget extends StatelessWidget {
           ),
         ),
         child: Positioned(child: AppBar(title: Text(
-            'Explore Shanghai',
+            '',
             style: TextStyle(
               fontSize: 30,
               fontWeight: FontWeight.bold,
