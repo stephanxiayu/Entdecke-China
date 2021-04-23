@@ -1,5 +1,5 @@
 import 'package:china/sliding/main_image_widget.dart';
-import 'package:china/sliding/tab_widget.dart';
+
 import 'package:flutter/material.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 

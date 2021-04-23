@@ -26,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
             Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage("lib/assets/peking11.png"),
+                  image: AssetImage("lib/assets/cn9.png"),
                   fit: BoxFit.cover,
                 ),
               ),
