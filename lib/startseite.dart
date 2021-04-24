@@ -3,20 +3,46 @@ import 'package:china/homescreen.dart';
 import 'package:china/menschen/menschen.dart';
 import 'package:china/sliding/home_page.dart';
 import 'package:flutter/material.dart';
+import 'package:twinkle_button/twinkle_button.dart';
+import 'package:video_player/video_player.dart';
 
-class StartSeite extends StatelessWidget {
+class StartSeite extends StatefulWidget {
+  @override
+  _StartSeiteState createState() => _StartSeiteState();
+}
+
+class _StartSeiteState extends State<StartSeite> {
+   VideoPlayerController _controller;
+
+
+  @override
+  void initState() {
+    super.initState();
+  
+    _controller = VideoPlayerController.asset("lib/assets/5.mp4")
+      ..initialize().then((_) {
+     
+        _controller.play();
+        _controller.setLooping(true);
+        // Ensure the first frame is shown after the video is initialized.
+        setState(() {});
+      });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: SafeArea(
-        bottom: false,
-        top: false,
-            child: Stack(children: [
-      Container(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage("lib/assets/d8.png"),
-            fit: BoxFit.cover,
+       body: Stack(children: <Widget>[
+      // TODO 7: Add a SizedBox to contain our video.
+      SizedBox.expand(
+        child: FittedBox(
+          // If your background video doesn't look right, try changing the BoxFit property.
+          // BoxFit.fill created the look I was going for.
+          fit: BoxFit.fill,
+          child: SizedBox(
+            width: _controller.value.size?.width ?? 0,
+            height: _controller.value.size?.height ?? 0,
+            child: VideoPlayer(_controller),
           ),
         ),
       ),
@@ -38,32 +64,26 @@ class StartSeite extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       Center(
-                        child: TextButton(
-            onPressed: () => Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => HomeScreen(),
-              ),
-            ),
-            child: Container(
-              decoration: BoxDecoration(
-                color: Colors.transparent,
-                borderRadius: BorderRadius.circular(25),
-                border: Border.all(width: 3, color: Colors.white),
-              ),
-              height: 50,
-              width: MediaQuery.of(context).size.width * 0.7,
-              child: Center(
-                child: Text(
-                  "Coole Städte in China",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-            ),
+                        child: TwinkleButton(buttonWidth: 200,
+  buttonTitle: Text(
+    'Städte in China',
+    style: TextStyle(
+      color: Colors.white,
+          fontWeight: FontWeight.w300,
+          fontSize: 17.0,
+        ),
+    ),
+    buttonColor: Colors.transparent,
+    onclickButtonFunction: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => StartSeite(),
+                          ),
+                        ),
+      
+    
+
+          
                         ),
                       ),
                       SizedBox(height: 30),
@@ -76,34 +96,28 @@ class StartSeite extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Center(
-                      child: TextButton(
-                        onPressed: () => Navigator.push(
+                      child: TwinkleButton(buttonWidth: 200,
+  buttonTitle: Text(
+    'Menschen in China',
+    style: TextStyle(
+      color: Colors.white,
+          fontWeight: FontWeight.w300,
+          fontSize: 17.0,
+        ),
+    ),
+    buttonColor: Colors.transparent,
+    onclickButtonFunction: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => MenschenUebersicht(),
+                            builder: (context) => StartSeite(),
                           ),
                         ),
-                        child: Container(
-                          decoration: BoxDecoration(
-                            color: Colors.transparent,
-                            borderRadius: BorderRadius.circular(25),
-                            border: Border.all(width: 3, color: Colors.white),
-                          ),
-                          height: 50,
-                          width: MediaQuery.of(context).size.width * 0.7,
-                          child: Center(
-                            child: Text(
-                              "Menschen in China",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
+      
+    
+
+          
                         ),
                       ),
-                    ),
                     SizedBox(height: 30),
                   ]),
             ),
@@ -114,34 +128,28 @@ class StartSeite extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Center(
-                      child: TextButton(
-                       onPressed: () => Navigator.push(
+                      child: TwinkleButton(buttonWidth: 200,
+  buttonTitle: Text(
+    'Geschichte von China',
+    style: TextStyle(
+      color: Colors.white,
+          fontWeight: FontWeight.w300,
+          fontSize: 17.0,
+        ),
+    ),
+    buttonColor: Colors.transparent,
+    onclickButtonFunction: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => Geschichte(),
+                            builder: (context) => StartSeite(),
                           ),
                         ),
-                        child: Container(
-                          decoration: BoxDecoration(
-                            color: Colors.transparent,
-                            borderRadius: BorderRadius.circular(25),
-                            border: Border.all(width: 3, color: Colors.white),
-                          ),
-                          height: 50,
-                          width: MediaQuery.of(context).size.width * 0.7,
-                          child: Center(
-                            child: Text(
-                              "Geschichte von China",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
+      
+    
+
+          
                         ),
                       ),
-                    ),
                     SizedBox(height: 30),
                   ]),
             ),
@@ -152,63 +160,63 @@ class StartSeite extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Center(
-                      child: TextButton(
-                     onPressed: () {},
-                        child: Container(
-                          decoration: BoxDecoration(
-                            color: Colors.transparent,
-                            borderRadius: BorderRadius.circular(25),
-                            border: Border.all(width: 3, color: Colors.white),
-                          ),
-                          height: 50,
-                          width: MediaQuery.of(context).size.width * 0.7,
-                          child: Center(
-                            child: Text(
-                              "Sprache in China",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
+                      child: TwinkleButton(buttonWidth: 200,
+  buttonTitle: Text(
+    'Sprache in China',
+    style: TextStyle(
+      color: Colors.white,
+          fontWeight: FontWeight.w300,
+          fontSize: 17.0,
+        ),
+    ),
+    buttonColor: Colors.transparent,
+    onclickButtonFunction: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => StartSeite(),
                           ),
                         ),
+      
+    
+
+          
+                        ),
                       ),
-                    ),
                     SizedBox(height: 30),
                   ]),
             ),
-            Container(
-                child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    mainAxisSize: MainAxisSize.max,
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                  Center(
-                    child: TextButton(
-                   onPressed: () {},
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.transparent,
-                          borderRadius: BorderRadius.circular(25),
-                          border: Border.all(width: 3, color: Colors.white),
-                        ),
-                        height: 50,
-                        width: MediaQuery.of(context).size.width * 0.7,
-                        child: Center(
-                          child: Text(
-                            "Unis in China",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
-                              fontWeight: FontWeight.bold,
-                            ),
+            SingleChildScrollView(
+                          child: Container(
+                  child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                    Center(
+                      child: TwinkleButton(buttonWidth: 200,
+  buttonTitle: Text(
+    'Unis in China',
+    style: TextStyle(
+      color: Colors.white,
+          fontWeight: FontWeight.w300,
+          fontSize: 17.0,
+        ),
+    ),
+    buttonColor: Colors.transparent,
+    onclickButtonFunction: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => StartSeite(),
                           ),
                         ),
+      
+    
+
+          
+                        ),
                       ),
-                    ),
-                  ),
-                ])),
+                  ])),
+            ),
             SizedBox(
               height: 30,
             ),
@@ -219,38 +227,38 @@ class StartSeite extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Center(
-                      child: TextButton(
-                      onPressed: () => Navigator.push(
+                      child:TwinkleButton(buttonWidth: 200,
+  buttonTitle: Text(
+    'Dating in China',
+    style: TextStyle(
+      color: Colors.red,
+          fontWeight: FontWeight.w300,
+          fontSize: 17.0,
+        ),
+    ),
+    buttonColor: Colors.transparent,
+    onclickButtonFunction: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => HomePage(),
+                            builder: (context) => StartSeite(),
                           ),
                         ),
-                        child: Container(
-                          decoration: BoxDecoration(
-                            color: Colors.transparent,
-                            borderRadius: BorderRadius.circular(25),
-                            border: Border.all(width: 3, color: Colors.white),
-                          ),
-                          height: 50,
-                          width: MediaQuery.of(context).size.width * 0.7,
-                          child: Center(
-                            child: Text(
-                              "Dating in China",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
+      
+    
+
+          
                         ),
                       ),
-                    ),
                     SizedBox(height: 50),
                   ]),
             ),
           ])
-    ])));
+    ]));
+
+        @override
+  void dispose() {
+    super.dispose();
+    _controller.dispose();
+  }
   }
 }

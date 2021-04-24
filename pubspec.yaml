@@ -27,8 +27,9 @@ dependencies:
   page_transition: ^1.1.4  
   sliding_up_panel: ^1.0.2
   youtube_player_flutter: ^6.1.0+7
-  video_player: ^1.0.1
+  video_player: 
   url_launcher: ^5.7.10
+  twinkle_button:
   
  
 
@@ -127,6 +128,15 @@ flutter:
     - lib/assets/a5.png
     - lib/assets/a6.png
     - lib/assets/d9.jpg
+    - lib/assets/9.mp4
+    - lib/assets/2.mp4
+    - lib/assets/5.mp4
+    - lib/assets/6.mp4
+    - lib/assets/7.mp4
+    - lib/assets/8.mp4
+    - lib/assets/11.mp4
+    - lib/assets/12.mp4
+    
  
    
     
