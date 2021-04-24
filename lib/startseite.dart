@@ -19,7 +19,7 @@ class _StartSeiteState extends State<StartSeite> {
   void initState() {
     super.initState();
   
-    _controller = VideoPlayerController.asset("lib/assets/5.mp4")
+    _controller = VideoPlayerController.asset("lib/assets/ee.mp4")
       ..initialize().then((_) {
      
         _controller.play();
@@ -68,7 +68,7 @@ class _StartSeiteState extends State<StartSeite> {
   buttonTitle: Text(
     'Städte in China',
     style: TextStyle(
-      color: Colors.white,
+      color: Colors.red,
           fontWeight: FontWeight.w300,
           fontSize: 17.0,
         ),
@@ -100,7 +100,7 @@ class _StartSeiteState extends State<StartSeite> {
   buttonTitle: Text(
     'Menschen in China',
     style: TextStyle(
-      color: Colors.white,
+      color: Colors.red,
           fontWeight: FontWeight.w300,
           fontSize: 17.0,
         ),
@@ -132,7 +132,7 @@ class _StartSeiteState extends State<StartSeite> {
   buttonTitle: Text(
     'Geschichte von China',
     style: TextStyle(
-      color: Colors.white,
+      color: Colors.red,
           fontWeight: FontWeight.w300,
           fontSize: 17.0,
         ),
@@ -164,7 +164,7 @@ class _StartSeiteState extends State<StartSeite> {
   buttonTitle: Text(
     'Sprache in China',
     style: TextStyle(
-      color: Colors.white,
+      color: Colors.red,
           fontWeight: FontWeight.w300,
           fontSize: 17.0,
         ),
@@ -197,7 +197,7 @@ class _StartSeiteState extends State<StartSeite> {
   buttonTitle: Text(
     'Unis in China',
     style: TextStyle(
-      color: Colors.white,
+      color: Colors.red,
           fontWeight: FontWeight.w300,
           fontSize: 17.0,
         ),

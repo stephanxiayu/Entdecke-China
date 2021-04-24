@@ -132,10 +132,11 @@ flutter:
     - lib/assets/2.mp4
     - lib/assets/5.mp4
     - lib/assets/6.mp4
-    - lib/assets/7.mp4
-    - lib/assets/8.mp4
+    
+  
     - lib/assets/11.mp4
     - lib/assets/12.mp4
+    - lib/assets/ee.mp4
     
  
    
