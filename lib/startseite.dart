@@ -48,10 +48,7 @@ class _StartSeiteState extends State<StartSeite> {
       ),
 
 
-      Positioned(child: AppBar(
-      backgroundColor: Colors.transparent,
-      elevation: 8,
-      )),
+    
       SingleChildScrollView(child: SizedBox(height: 100,)),
       Column(verticalDirection: VerticalDirection.down,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -240,7 +237,7 @@ class _StartSeiteState extends State<StartSeite> {
     onclickButtonFunction: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => StartSeite(),
+                            builder: (context) => HomePage(),
                           ),
                         ),
       
