@@ -1,4 +1,4 @@
-import 'package:china/beijingvideo.dart';
+import 'package:china/st%C3%A4dte/beijingvideo.dart';
 import 'package:china/chinesische_mauer.dart';
 import 'package:china/st%C3%A4dte/chongqing.dart';
 

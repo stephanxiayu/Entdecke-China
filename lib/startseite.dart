@@ -17,7 +17,7 @@ class _StartSeiteState extends State<StartSeite> {
   void initState() {
     super.initState();
 
-    _controller = VideoPlayerController.asset("lib/assets/ee.mp4")
+    _controller = VideoPlayerController.asset("lib/assets/ss.mp4")
       ..initialize().then((_) {
         _controller.play();
         _controller.setLooping(true);

@@ -129,8 +129,8 @@ flutter:
     - lib/assets/a6.png
     - lib/assets/d9.jpg
     - lib/assets/ff.mp4
-    
-  
+    - lib/assets/ss.mp4
+    - lib/assets/mm.mp4
     - lib/assets/11.mp4
     - lib/assets/12.mp4
     - lib/assets/ee.mp4

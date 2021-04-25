@@ -1,5 +1,6 @@
 import 'package:china/city_animation.dart';
-import 'package:china/menschen.dart';
+import 'package:china/menschen/menschen.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -43,7 +44,7 @@ class _PekingState extends State<Peking> with SingleTickerProviderStateMixin {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Menschen(),
+                    builder: (context) => MenschenUebersicht(),
                   ),
                 );
               },
