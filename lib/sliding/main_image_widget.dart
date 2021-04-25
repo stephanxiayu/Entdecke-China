@@ -19,7 +19,7 @@ class _MainImageWidgetState extends State<MainImageWidget> {
      
         _controller.play();
         _controller.setLooping(true);
-        // Ensure the first frame is shown after the video is initialized.
+      
         setState(() {});
       });
   }
@@ -29,11 +29,10 @@ class _MainImageWidgetState extends State<MainImageWidget> {
   @override
   Widget build(BuildContext context) => Scaffold(
        body: Stack(children: <Widget>[
-      // TODO 7: Add a SizedBox to contain our video.
+    
       SizedBox.expand(
         child: FittedBox(
-          // If your background video doesn't look right, try changing the BoxFit property.
-          // BoxFit.fill created the look I was going for.
+
           fit: BoxFit.fill,
           child: SizedBox(
             width: _controller.value.size?.width ?? 0,
