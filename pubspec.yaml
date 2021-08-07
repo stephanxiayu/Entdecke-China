@@ -30,6 +30,10 @@ dependencies:
   video_player: 
   url_launcher: ^5.7.10
   twinkle_button:
+  http: 
+  cached_network_image: 
+  webview_flutter: 
+
   
  
 
@@ -44,6 +48,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_launcher_icons: "^0.8.0"
+  build_runner:
 
 flutter_icons:
   image_path: "lib//icon/c1.png"
@@ -66,8 +71,10 @@ flutter:
   assets:
     - lib/assets/china1.png
     - lib/assets/peking1.png
-
+    - lib/assets/1.png
+    - lib/assets/2.png
    
+    - lib/assets/users.json
     - lib/assets/menschen1.png
     - lib/assets/geschichten1.png
     - lib/assets/peking2.png
@@ -134,6 +141,7 @@ flutter:
     - lib/assets/11.mp4
     - lib/assets/12.mp4
     - lib/assets/ee.mp4
+    - lib/assets/xx.mp4
     
  
    

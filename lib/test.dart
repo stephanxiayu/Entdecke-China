@@ -15,7 +15,7 @@ class _VideoTestState extends State<VideoTest> {
   void initState() {
     super.initState();
 
-    _controller = VideoPlayerController.asset("lib/assets/12.mp4")
+    _controller = VideoPlayerController.asset("lib/assets/xx.mp4")
       ..initialize().then((_) {
         _controller.play();
         _controller.setLooping(true);

@@ -17,7 +17,7 @@ class _StartSeiteState extends State<StartSeite> {
   void initState() {
     super.initState();
 
-    _controller = VideoPlayerController.asset("lib/assets/ss.mp4")
+    _controller = VideoPlayerController.asset("lib/assets/11.mp4")
       ..initialize().then((_) {
         _controller.play();
         _controller.setLooping(true);
@@ -49,6 +49,7 @@ class _StartSeiteState extends State<StartSeite> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            
             Container(
               child: Column(
                   crossAxisAlignment: CrossAxisAlignment.end,
@@ -229,10 +230,5 @@ class _StartSeiteState extends State<StartSeite> {
           ])
     ]));
 
-    @override
-    void dispose() {
-      super.dispose();
-      _controller.dispose();
-    }
-  }
-}
+
+  }}
