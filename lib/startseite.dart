@@ -1,6 +1,7 @@
+import 'package:china/homepage.dart';
 import 'package:china/homescreen.dart';
 import 'package:china/menschen/menschen.dart';
-import 'package:china/sliding/home_page.dart';
+
 import 'package:flutter/material.dart';
 import 'package:twinkle_button/twinkle_button.dart';
 import 'package:video_player/video_player.dart';

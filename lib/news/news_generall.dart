@@ -1,29 +1,17 @@
-import 'package:china/ChinaTable/ueberschrift.dart';
 import 'package:china/admob.dart';
-
-import 'package:china/homescreen.dart';
-
-import 'package:china/news/news.dart';
-import 'package:china/news/news_generall.dart';
+import 'package:china/news/bj_rundschau.dart';
+import 'package:china/news/daily_cn.dart';
 import 'package:china/news/south.dart';
-import 'package:china/unterricht/testlern.dart';
-
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
-import 'menschen/menschen.dart';
+class NewsGenerall extends StatelessWidget {
+  
 
-void main() {
-  runApp(MaterialApp(
-      debugShowCheckedModeBanner: false, home: Start(), theme: ThemeData()));
-}
-
-class Start extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body: SafeArea(
-            child: GridView.count(
+    return Scaffold(appBar: AppBar(title: Text("Nachrichten aus China"), ),
+body: GridView.count(
       primary: false,
       padding: const EdgeInsets.all(20),
       crossAxisSpacing: 10,
@@ -31,85 +19,82 @@ class Start extends StatelessWidget {
       crossAxisCount: 2,
       children: <Widget>[
         GestureDetector(
+           onTap: () => Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => DailyCn(),
+            ),),
+          child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('lib/assets/daily1.png'),
+                fit: BoxFit.fill,
+              ),
+            ),
+            padding: const EdgeInsets.all(8),
+            child: Align(
+                alignment: Alignment.bottomCenter,
+                child: const Text(
+                  "Daily-China",
+                  style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold),
+                )),
+          ),
+        ),
+        GestureDetector(
+      onTap: () => Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => SCMoring(),
+            ),),
+          child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('lib/assets/scm.png'),
+                fit: BoxFit.fill,
+              ),
+            ),
+            padding: const EdgeInsets.all(8),
+            child: Align(
+                alignment: Alignment.bottomCenter,
+                child: const Text(
+                  "South China Moring Post",
+                  style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold),
+                )),
+          ),
+        ),
+        GestureDetector(
+         onTap: () => Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => BjRundschau(),
+            ),),
+          child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('lib/assets/bj.png'),
+                fit: BoxFit.fill,
+              ),
+            ),
+            padding: const EdgeInsets.all(8),
+            child: Align(
+                alignment: Alignment.bottomCenter,
+                child: const Text(
+                  "Beijing Rundschau",
+                  style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold),
+                )),
+          ),
+        ),
+        GestureDetector(
           onTap: () {},
-          child: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('lib/assets/cn14.jpg'),
-                fit: BoxFit.fill,
-              ),
-            ),
-            padding: const EdgeInsets.all(8),
-            child: Align(
-                alignment: Alignment.bottomCenter,
-                child: const Text(
-                  "Chineische Universität",
-                  style: TextStyle(
-                      color: Colors.grey,
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold),
-                )),
-          ),
-        ),
-        GestureDetector(
-          onTap: () => Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => WegWeiser(),
-            ),
-          ),
-          child: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('lib/assets/2.png'),
-                fit: BoxFit.fill,
-              ),
-            ),
-            padding: const EdgeInsets.all(8),
-            child: Align(
-                alignment: Alignment.bottomCenter,
-                child: const Text(
-                  "Neue praktische chinesisch",
-                  style: TextStyle(
-                      color: Colors.grey,
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold),
-                )),
-          ),
-        ),
-        GestureDetector(
-          onTap: () => Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => HomeScreen(),
-            ),
-          ),
-          child: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('lib/assets/d9.jpg'),
-                fit: BoxFit.fill,
-              ),
-            ),
-            padding: const EdgeInsets.all(8),
-            child: Align(
-                alignment: Alignment.bottomCenter,
-                child: const Text(
-                  "Chinesische Städte",
-                  style: TextStyle(
-                      color: Colors.grey,
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold),
-                )),
-          ),
-        ),
-        GestureDetector(
-          onTap: () => Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => MenschenUebersicht(),
-            ),
-          ),
           child: Container(
             decoration: BoxDecoration(
               image: DecorationImage(
@@ -130,12 +115,7 @@ class Start extends StatelessWidget {
           ),
         ),
         GestureDetector(
-          onTap: () => Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => NewsGenerall(),
-            ),
-          ),
+          onTap: () {},
           child: Container(
             decoration: BoxDecoration(
               image: DecorationImage(
@@ -154,12 +134,7 @@ class Start extends StatelessWidget {
           ),
         ),
         GestureDetector(
-          onTap: () => Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => TestLern(),
-            ),
-          ),
+          onTap: () {},
           child: Container(
             padding: const EdgeInsets.all(8),
             child: const Text('Revolution, they...'),
@@ -167,7 +142,7 @@ class Start extends StatelessWidget {
           ),
         ),
       ],
-    ),),bottomNavigationBar: Container(
+    ),bottomNavigationBar: Container(
             height: 60,
             color: Colors.black,
             child: AdWidget(
@@ -175,5 +150,7 @@ class Start extends StatelessWidget {
               key: UniqueKey(),
             ))
     );
+      
+    
   }
 }

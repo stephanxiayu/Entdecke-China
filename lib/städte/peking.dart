@@ -1,8 +1,10 @@
-import 'package:china/city_animation.dart';
+
 import 'package:china/menschen/menschen.dart';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import 'city_animation.dart';
 
 class Peking extends StatefulWidget {
   @override

@@ -1,4 +1,5 @@
-import 'package:china/city_animation.dart';
+
+import 'package:china/st%C3%A4dte/city_animation.dart';
 import 'package:china/videos/xinli_video.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

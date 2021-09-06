@@ -1,6 +1,7 @@
 import 'package:china/history/video_geschichte.dart';
 
-import 'package:china/city_animation.dart';
+
+import 'package:china/st%C3%A4dte/city_animation.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

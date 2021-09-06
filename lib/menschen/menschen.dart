@@ -2,7 +2,7 @@
 import 'package:china/menschen/ma_yun.dart';
 import 'package:china/menschen/xin_li.dart';
 
-import 'package:china/wedding.dart';
+import 'package:china/videos/wedding.dart';
 
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';

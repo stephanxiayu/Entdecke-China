@@ -1,8 +1,8 @@
 import 'package:china/startseite.dart';
 import 'package:flutter/material.dart';
-import 'package:video_player/video_player.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 import 'package:twinkle_button/twinkle_button.dart';
-
+import 'package:video_player/video_player.dart';
 class VideoTest extends StatefulWidget {
   @override
   _VideoTestState createState() => _VideoTestState();

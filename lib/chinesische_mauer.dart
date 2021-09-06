@@ -1,6 +1,8 @@
-import 'package:china/city_animation.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import 'städte/city_animation.dart';
 
 class Mauer extends StatefulWidget {
   @override
