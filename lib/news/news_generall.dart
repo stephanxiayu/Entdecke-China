@@ -1,6 +1,7 @@
 import 'package:china/admob.dart';
 import 'package:china/news/bj_rundschau.dart';
 import 'package:china/news/daily_cn.dart';
+import 'package:china/news/epochtimes.dart';
 import 'package:china/news/south.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
@@ -10,7 +11,7 @@ class NewsGenerall extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(title: Text("Nachrichten aus China"), ),
+    return Scaffold(appBar: AppBar(title: Text("Nachrichten aus China"), backgroundColor: Colors.white,),
 body: GridView.count(
       primary: false,
       padding: const EdgeInsets.all(20),
@@ -94,11 +95,15 @@ body: GridView.count(
           ),
         ),
         GestureDetector(
-          onTap: () {},
+         onTap: () => Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => EPTimes(),
+            ),),
           child: Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('lib/assets/1.png'),
+                image: AssetImage('lib/assets/eptimes.png'),
                 fit: BoxFit.fill,
               ),
             ),
@@ -106,7 +111,7 @@ body: GridView.count(
             child: Align(
                 alignment: Alignment.bottomCenter,
                 child: const Text(
-                  "Menschen in China",
+                  "Epoch Times",
                   style: TextStyle(
                       color: Colors.grey,
                       fontSize: 25,
@@ -114,33 +119,7 @@ body: GridView.count(
                 )),
           ),
         ),
-        GestureDetector(
-          onTap: () {},
-          child: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('lib/assets/scm.png'),
-                fit: BoxFit.fill,
-              ),
-            ),
-            padding: const EdgeInsets.all(8),
-            child: const Text(
-              "",
-              style: TextStyle(
-                  color: Colors.grey,
-                  fontSize: 25,
-                  fontWeight: FontWeight.bold),
-            ),
-          ),
-        ),
-        GestureDetector(
-          onTap: () {},
-          child: Container(
-            padding: const EdgeInsets.all(8),
-            child: const Text('Revolution, they...'),
-            color: Colors.teal[600],
-          ),
-        ),
+       
       ],
     ),bottomNavigationBar: Container(
             height: 60,

@@ -139,7 +139,7 @@ class Start extends StatelessWidget {
           child: Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('lib/assets/scm.png'),
+                image: AssetImage('lib/assets/china24.png'),
                 fit: BoxFit.fill,
               ),
             ),
