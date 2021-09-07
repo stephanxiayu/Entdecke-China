@@ -6,6 +6,7 @@ import 'package:china/homescreen.dart';
 import 'package:china/news/news.dart';
 import 'package:china/news/news_generall.dart';
 import 'package:china/news/south.dart';
+import 'package:china/st%C3%A4dte/staedte.dart';
 import 'package:china/unterricht/testlern.dart';
 
 import 'package:flutter/material.dart';
@@ -95,7 +96,7 @@ class _StartState extends State<Start> {
           onTap: () => Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => HomeScreen(),
+              builder: (context) => Staedte(),
             ),
           ),
           child: Container(
