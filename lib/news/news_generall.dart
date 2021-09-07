@@ -11,7 +11,7 @@ class NewsGenerall extends StatelessWidget {
   
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) {AdmobHelper admobHelper = Provider.of<AdmobHelper> (context, listen:false);
     return Scaffold(appBar: AppBar(title: Text("Nachrichten aus China"), backgroundColor: Colors.white,),
 body: GridView.count(
       primary: false,
@@ -22,11 +22,12 @@ body: GridView.count(
       children: <Widget>[
         buildDaily(context ),
         GestureDetector(
-      onTap: () => Navigator.push(
+      onTap: () async { admobHelper.loadRewardedAd(); admobHelper.showRewaredAd(); 
+              await Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => SCMoring(),
-            ),),
+              builder: (context) => SCMoring())
+            );},
           child: Container(
             decoration: BoxDecoration(
               image: DecorationImage(
@@ -47,11 +48,12 @@ body: GridView.count(
           ),
         ),
         GestureDetector(
-         onTap: () => Navigator.push(
+        onTap: () async { admobHelper.loadRewardedAd(); admobHelper.showRewaredAd();
+              await Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => BjRundschau(),
-            ),),
+              builder: (context) => BjRundschau())
+            );},
           child: Container(
             decoration: BoxDecoration(
               image: DecorationImage(
@@ -72,11 +74,12 @@ body: GridView.count(
           ),
         ),
         GestureDetector(
-         onTap: () => Navigator.push(
+          onTap: () async { admobHelper.loadRewardedAd(); admobHelper.showRewaredAd();
+              await Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => EPTimes(),
-            ),),
+              builder: (context) => EPTimes())
+            );},
           child: Container(
             decoration: BoxDecoration(
               image: DecorationImage(
@@ -112,7 +115,7 @@ body: GridView.count(
 }
 
 Widget buildDaily (BuildContext context) { AdmobHelper admobHelper = Provider.of<AdmobHelper> (context, listen:false);
-  return GestureDetector( onTap: ()async {  admobHelper.loadRewardedAd(); admobHelper.showRewaredAd();
+  return GestureDetector( onTap: ()async {  admobHelper.loadRewardedAd();admobHelper.showRewaredAd();
               await Navigator.push(
             context,
             MaterialPageRoute(
