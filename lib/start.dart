@@ -19,130 +19,138 @@ class _StartState extends State<Start> {
   
   @override
   Widget build(BuildContext context) { 
-    return Scaffold(
-        body: SafeArea(
-            child: GridView.count(
+    return Scaffold(appBar: AppBar(backgroundColor: Colors.white,
+      title: Center(
+      child: Text("Entdecke China", style: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold),),
+    ),),
+        body: GridView.count(
       primary: false,
       padding: const EdgeInsets.all(20),
       crossAxisSpacing: 10,
       mainAxisSpacing: 10,
       crossAxisCount: 2,
       children: <Widget>[
+         GestureDetector(
+          onTap: () => Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => Staedte(),
+        ),
+          ),
+          child: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('lib/assets/d9.jpg'),
+            fit: BoxFit.fill,
+          ),
+        ),
+        padding: const EdgeInsets.all(8),
+        child: Align(
+            alignment: Alignment.bottomCenter,
+            child: const Text(
+              "Chinesische Städte",
+              style: TextStyle(
+                  color: Colors.grey,
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold),
+            )),
+          ),
+        ),
+         buildGesture(context),
+          GestureDetector(
+          onTap: () => Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => MenschenUebersicht(),
+        ),
+          ),
+          child: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('lib/assets/1.png'),
+            fit: BoxFit.fill,
+          ),
+        ),
+        padding: const EdgeInsets.all(8),
+        child: Align(
+            alignment: Alignment.bottomCenter,
+            child: const Text(
+              "Menschen in China",
+              style: TextStyle(
+                  color: Colors.grey,
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold),
+            )),
+          ),
+        ),
+      
         GestureDetector(
           onTap: () {},
           child: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('lib/assets/cn14.jpg'),
-                fit: BoxFit.fill,
-              ),
-            ),
-            padding: const EdgeInsets.all(8),
-            child: Align(
-                alignment: Alignment.bottomCenter,
-                child: const Text(
-                  "Chineische Universität",
-                  style: TextStyle(
-                      color: Colors.grey,
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold),
-                )),
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('lib/assets/cn14.jpg'),
+            fit: BoxFit.fill,
+          ),
+        ),
+        padding: const EdgeInsets.all(8),
+        child: Align(
+            alignment: Alignment.bottomCenter,
+            child: const Text(
+              "Chineische Universität",
+              style: TextStyle(
+                  color: Colors.grey,
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold),
+            )),
           ),
         ),
         GestureDetector(
           onTap: () => Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => WegWeiser(),
-            ),
+        context,
+        MaterialPageRoute(
+          builder: (context) => WegWeiser(),
+        ),
           ),
           child: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('lib/assets/2.png'),
-                fit: BoxFit.fill,
-              ),
-            ),
-            padding: const EdgeInsets.all(8),
-            child: Align(
-                alignment: Alignment.bottomCenter,
-                child: const Text(
-                  "Neue praktische chinesisch",
-                  style: TextStyle(
-                      color: Colors.grey,
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold),
-                )),
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('lib/assets/2.png'),
+            fit: BoxFit.fill,
           ),
         ),
-        GestureDetector(
-          onTap: () => Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => Staedte(),
-            ),
-          ),
-          child: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('lib/assets/d9.jpg'),
-                fit: BoxFit.fill,
-              ),
-            ),
-            padding: const EdgeInsets.all(8),
-            child: Align(
-                alignment: Alignment.bottomCenter,
-                child: const Text(
-                  "Chinesische Städte",
-                  style: TextStyle(
-                      color: Colors.grey,
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold),
-                )),
+        padding: const EdgeInsets.all(8),
+        child: Align(
+            alignment: Alignment.bottomCenter,
+            child: const Text(
+              "Neue praktische chinesisch",
+              style: TextStyle(
+                  color: Colors.grey,
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold),
+            )),
           ),
         ),
+       
+       
         GestureDetector(
           onTap: () => Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => MenschenUebersicht(),
-            ),
-          ),
-          child: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('lib/assets/1.png'),
-                fit: BoxFit.fill,
-              ),
-            ),
-            padding: const EdgeInsets.all(8),
-            child: Align(
-                alignment: Alignment.bottomCenter,
-                child: const Text(
-                  "Menschen in China",
-                  style: TextStyle(
-                      color: Colors.grey,
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold),
-                )),
-          ),
+        context,
+        MaterialPageRoute(
+          builder: (context) => TestLern(),
         ),
-       buildGesture(context),
-        GestureDetector(
-          onTap: () => Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => TestLern(),
-            ),
           ),
           child: Container(
-            padding: const EdgeInsets.all(8),
-            child: const Text('Revolution, they...'),
-            color: Colors.teal[600],
+        padding: const EdgeInsets.all(8),
+        child: const Text('Revolution, they...'),
+        color: Colors.teal[600],
           ),
         ),
       ],
-    ),),bottomNavigationBar: Container(
+    ),bottomNavigationBar: Container(
             height: 60,
             color: Colors.black,
             child: AdWidget(
@@ -166,12 +174,14 @@ Widget buildGesture (BuildContext context) {AdmobHelper admobHelper = Provider.o
               ),
             ),
             padding: const EdgeInsets.all(8),
-            child: const Text(
-              "",
+        child: Align(
+            alignment: Alignment.bottomCenter,
+            child:  Text(
+              "News",
               style: TextStyle(
                   color: Colors.grey,
                   fontSize: 25,
                   fontWeight: FontWeight.bold),
             ),
-          ),);
+          ),));
 }
