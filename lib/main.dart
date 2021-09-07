@@ -10,17 +10,31 @@ import 'package:china/unterricht/testlern.dart';
 
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-
+import 'package:provider/provider.dart';
 import 'menschen/menschen.dart';
 
-void main() {
-  runApp(MaterialApp(
-      debugShowCheckedModeBanner: false, home: Start(), theme: ThemeData()));
+void main() { WidgetsFlutterBinding.ensureInitialized();
+
+
+
+    AdmobHelper.initialization();
+  runApp(ChangeNotifierProvider( create:(BuildContext context)=> AdmobHelper(),
+    child: MaterialApp(
+        debugShowCheckedModeBanner: false, home: 
+         Start(),theme: ThemeData()),
+  ));
 }
 
-class Start extends StatelessWidget {
+class Start extends StatefulWidget {
+ 
   @override
-  Widget build(BuildContext context) {
+  _StartState createState() => _StartState();
+}
+
+class _StartState extends State<Start> {
+  
+  @override
+  Widget build(BuildContext context) { 
     return Scaffold(
         body: SafeArea(
             child: GridView.count(
@@ -129,30 +143,7 @@ class Start extends StatelessWidget {
                 )),
           ),
         ),
-        GestureDetector(
-          onTap: () => Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => NewsGenerall(),
-            ),
-          ),
-          child: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('lib/assets/china24.png'),
-                fit: BoxFit.fill,
-              ),
-            ),
-            padding: const EdgeInsets.all(8),
-            child: const Text(
-              "",
-              style: TextStyle(
-                  color: Colors.grey,
-                  fontSize: 25,
-                  fontWeight: FontWeight.bold),
-            ),
-          ),
-        ),
+       buildGesture(context),
         GestureDetector(
           onTap: () => Navigator.push(
             context,
@@ -173,7 +164,30 @@ class Start extends StatelessWidget {
             child: AdWidget(
               ad: AdmobHelper.getBannerAd()..load(),
               key: UniqueKey(),
-            ))
+            )),
     );
   }
+}
+Widget buildGesture (BuildContext context) {AdmobHelper admobHelper = Provider.of<AdmobHelper> (context, listen:false);
+  return GestureDetector( onTap: ()async {admobHelper.loadRewardedAd();
+              await Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => NewsGenerall(),
+            ));},
+    child: Container(decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('lib/assets/china24.png'),
+                fit: BoxFit.fill,
+              ),
+            ),
+            padding: const EdgeInsets.all(8),
+            child: const Text(
+              "",
+              style: TextStyle(
+                  color: Colors.grey,
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold),
+            ),
+          ),);
 }

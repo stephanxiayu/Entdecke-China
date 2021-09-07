@@ -5,6 +5,7 @@ import 'package:china/news/epochtimes.dart';
 import 'package:china/news/south.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:provider/provider.dart';
 
 class NewsGenerall extends StatelessWidget {
   
@@ -19,31 +20,7 @@ body: GridView.count(
       mainAxisSpacing: 10,
       crossAxisCount: 2,
       children: <Widget>[
-        GestureDetector(
-           onTap: () => Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => DailyCn(),
-            ),),
-          child: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('lib/assets/daily1.png'),
-                fit: BoxFit.fill,
-              ),
-            ),
-            padding: const EdgeInsets.all(8),
-            child: Align(
-                alignment: Alignment.bottomCenter,
-                child: const Text(
-                  "Daily-China",
-                  style: TextStyle(
-                      color: Colors.grey,
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold),
-                )),
-          ),
-        ),
+        buildDaily(context ),
         GestureDetector(
       onTap: () => Navigator.push(
             context,
@@ -132,4 +109,28 @@ body: GridView.count(
       
     
   }
+}
+
+Widget buildDaily (BuildContext context) { AdmobHelper admobHelper = Provider.of<AdmobHelper> (context, listen:false);
+  return GestureDetector( onTap: ()async {  admobHelper.loadRewardedAd(); admobHelper.showRewaredAd();
+              await Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => DailyCn(),
+            ));},
+    child: Container(decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('lib/assets/daily1.png'),
+                fit: BoxFit.fill,
+              ),
+            ),
+            padding: const EdgeInsets.all(8),
+            child: const Text(
+              "",
+              style: TextStyle(
+                  color: Colors.grey,
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold),
+            ),
+          ),);
 }
