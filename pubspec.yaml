@@ -28,7 +28,7 @@ dependencies:
   video_player:
   youtube_player_flutter: 
   url_launcher: 
- 
+  lottie:
   http: 
   cached_network_image: 
   webview_flutter: 
