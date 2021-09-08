@@ -19,7 +19,7 @@ class _StartState extends State<Start> {
   
   @override
   Widget build(BuildContext context) { 
-    return Scaffold(appBar: AppBar(backgroundColor: Colors.white,
+    return Scaffold(appBar: AppBar(backgroundColor: Colors.white,elevation: 8,
       title: Center(
       child: Text("Entdecke China", style: TextStyle(
                     color: Colors.grey,
