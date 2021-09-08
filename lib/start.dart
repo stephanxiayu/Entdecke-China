@@ -51,7 +51,7 @@ class _StartState extends State<Start> {
         child: Align(
             alignment: Alignment.bottomCenter,
             child: const Text(
-              "Chinesische Städte",
+              "Städte \in China",
               style: TextStyle(
                   color: Colors.grey,
                   fontSize: 25,
@@ -179,6 +179,7 @@ Widget buildGesture (BuildContext context) {AdmobHelper admobHelper = Provider.o
             child:  Text(
               "News",
               style: TextStyle(
+
                   color: Colors.grey,
                   fontSize: 25,
                   fontWeight: FontWeight.bold),

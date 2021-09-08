@@ -24,12 +24,11 @@ dependencies:
   flutter:
     sdk: flutter
   simple_animations: 
-  page_transition: 
-  sliding_up_panel:
+
   video_player:
   youtube_player_flutter: 
   url_launcher: 
-  twinkle_button:
+ 
   http: 
   cached_network_image: 
   webview_flutter: 
