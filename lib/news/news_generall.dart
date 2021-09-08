@@ -30,6 +30,20 @@ body: GridView.count(
             );},
           child: Container(
             decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(15),
+            color: Colors.grey[300],
+            boxShadow: [
+              BoxShadow(
+                  color: Colors.grey.shade500,
+                  offset: Offset(4.0, 4.0),
+                  blurRadius: 15.0,
+                  spreadRadius: 1.0),
+              BoxShadow(
+                  color: Colors.white,
+                  offset: Offset(-4.0, -4.0),
+                  blurRadius: 15.0,
+                  spreadRadius: 1.0),
+            ],
               image: DecorationImage(
                 image: AssetImage('lib/assets/scm.png'),
                 fit: BoxFit.fill,
@@ -55,7 +69,21 @@ body: GridView.count(
               builder: (context) => BjRundschau())
             );},
           child: Container(
-            decoration: BoxDecoration(
+           decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(15),
+            color: Colors.grey[300],
+            boxShadow: [
+              BoxShadow(
+                  color: Colors.grey.shade500,
+                  offset: Offset(4.0, 4.0),
+                  blurRadius: 15.0,
+                  spreadRadius: 1.0),
+              BoxShadow(
+                  color: Colors.white,
+                  offset: Offset(-4.0, -4.0),
+                  blurRadius: 15.0,
+                  spreadRadius: 1.0),
+            ],
               image: DecorationImage(
                 image: AssetImage('lib/assets/bj.png'),
                 fit: BoxFit.fill,
@@ -81,7 +109,21 @@ body: GridView.count(
               builder: (context) => EPTimes())
             );},
           child: Container(
-            decoration: BoxDecoration(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(15),
+            color: Colors.grey[300],
+            boxShadow: [
+              BoxShadow(
+                  color: Colors.grey.shade500,
+                  offset: Offset(4.0, 4.0),
+                  blurRadius: 15.0,
+                  spreadRadius: 1.0),
+              BoxShadow(
+                  color: Colors.white,
+                  offset: Offset(-4.0, -4.0),
+                  blurRadius: 15.0,
+                  spreadRadius: 1.0),
+            ],
               image: DecorationImage(
                 image: AssetImage('lib/assets/eptimes.png'),
                 fit: BoxFit.fill,
@@ -122,6 +164,20 @@ Widget buildDaily (BuildContext context) { AdmobHelper admobHelper = Provider.of
               builder: (context) => DailyCn(),
             ));},
     child: Container(decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(15),
+            color: Colors.grey[300],
+            boxShadow: [
+              BoxShadow(
+                  color: Colors.grey.shade500,
+                  offset: Offset(4.0, 4.0),
+                  blurRadius: 15.0,
+                  spreadRadius: 1.0),
+              BoxShadow(
+                  color: Colors.white,
+                  offset: Offset(-4.0, -4.0),
+                  blurRadius: 15.0,
+                  spreadRadius: 1.0),
+            ],
               image: DecorationImage(
                 image: AssetImage('lib/assets/daily1.png'),
                 fit: BoxFit.fill,

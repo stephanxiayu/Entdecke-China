@@ -12,9 +12,11 @@ class _SCMoringState extends State<SCMoring> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(appBar: AppBar(backgroundColor: Colors.transparent,),
-      body: WebView(
-javascriptMode: JavascriptMode.unrestricted,
-        initialUrl: "https://www.scmp.com/",
+      body: SafeArea(
+        child: WebView(
+      javascriptMode: JavascriptMode.unrestricted,
+          initialUrl: "https://www.scmp.com/",
+        ),
       ),
       
     );

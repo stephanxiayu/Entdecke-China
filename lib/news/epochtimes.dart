@@ -7,9 +7,11 @@ class EPTimes extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: WebView(
-javascriptMode: JavascriptMode.unrestricted,
-        initialUrl: "https://www.epochtimes.de/china",
+      body: SafeArea(
+        child: WebView(
+      javascriptMode: JavascriptMode.unrestricted,
+          initialUrl: "https://www.epochtimes.de/china",
+        ),
       ),
       
     );

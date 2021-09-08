@@ -7,9 +7,11 @@ class BjRundschau extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: WebView(
-javascriptMode: JavascriptMode.unrestricted,
-        initialUrl: "http://german.beijingreview.com.cn/",
+      body: SafeArea(
+        child: WebView(
+      javascriptMode: JavascriptMode.unrestricted,
+          initialUrl: "http://german.beijingreview.com.cn/",
+        ),
       ),
       
     );

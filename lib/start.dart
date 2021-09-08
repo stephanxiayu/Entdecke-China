@@ -41,7 +41,22 @@ class _StartState extends State<Start> {
         ),
           ),
           child: Container(
-        decoration: BoxDecoration(
+             decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(15),
+            color: Colors.grey[300],
+            boxShadow: [
+              BoxShadow(
+                  color: Colors.grey.shade500,
+                  offset: Offset(4.0, 4.0),
+                  blurRadius: 15.0,
+                  spreadRadius: 1.0),
+              BoxShadow(
+                  color: Colors.white,
+                  offset: Offset(-4.0, -4.0),
+                  blurRadius: 15.0,
+                  spreadRadius: 1.0),
+            ],
+       
           image: DecorationImage(
             image: AssetImage('lib/assets/d9.jpg'),
             fit: BoxFit.fill,
@@ -68,7 +83,21 @@ class _StartState extends State<Start> {
         ),
           ),
           child: Container(
-        decoration: BoxDecoration(
+      decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(15),
+            color: Colors.grey[300],
+            boxShadow: [
+              BoxShadow(
+                  color: Colors.grey.shade500,
+                  offset: Offset(4.0, 4.0),
+                  blurRadius: 15.0,
+                  spreadRadius: 1.0),
+              BoxShadow(
+                  color: Colors.white,
+                  offset: Offset(-4.0, -4.0),
+                  blurRadius: 15.0,
+                  spreadRadius: 1.0),
+            ],
           image: DecorationImage(
             image: AssetImage('lib/assets/1.png'),
             fit: BoxFit.fill,
@@ -90,7 +119,21 @@ class _StartState extends State<Start> {
         GestureDetector(
           onTap: () {},
           child: Container(
-        decoration: BoxDecoration(
+       decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(15),
+            color: Colors.grey[300],
+            boxShadow: [
+              BoxShadow(
+                  color: Colors.grey.shade500,
+                  offset: Offset(4.0, 4.0),
+                  blurRadius: 15.0,
+                  spreadRadius: 1.0),
+              BoxShadow(
+                  color: Colors.white,
+                  offset: Offset(-4.0, -4.0),
+                  blurRadius: 15.0,
+                  spreadRadius: 1.0),
+            ],
           image: DecorationImage(
             image: AssetImage('lib/assets/cn14.jpg'),
             fit: BoxFit.fill,
@@ -116,7 +159,21 @@ class _StartState extends State<Start> {
         ),
           ),
           child: Container(
-        decoration: BoxDecoration(
+       decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(15),
+            color: Colors.grey[300],
+            boxShadow: [
+              BoxShadow(
+                  color: Colors.grey.shade500,
+                  offset: Offset(4.0, 4.0),
+                  blurRadius: 15.0,
+                  spreadRadius: 1.0),
+              BoxShadow(
+                  color: Colors.white,
+                  offset: Offset(-4.0, -4.0),
+                  blurRadius: 15.0,
+                  spreadRadius: 1.0),
+            ],
           image: DecorationImage(
             image: AssetImage('lib/assets/2.png'),
             fit: BoxFit.fill,
@@ -144,12 +201,25 @@ class _StartState extends State<Start> {
         ),
           ),
           child: Container(
-        padding: const EdgeInsets.all(8),
-        child: const Text('Revolution, they...'),
-        color: Colors.teal[600],
+            decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(15),
+            color: Colors.grey[300],
+            boxShadow: [
+              BoxShadow(
+                  color: Colors.grey.shade500,
+                  offset: Offset(4.0, 4.0),
+                  blurRadius: 15.0,
+                  spreadRadius: 1.0),
+              BoxShadow(
+                  color: Colors.white,
+                  offset: Offset(-4.0, -4.0),
+                  blurRadius: 15.0,
+                  spreadRadius: 1.0),
+            ],
+        
           ),
         ),
-      ],
+        )],
     ),bottomNavigationBar: Container(
             height: 60,
             color: Colors.black,
@@ -168,6 +238,20 @@ Widget buildGesture (BuildContext context) {AdmobHelper admobHelper = Provider.o
               builder: (context) => NewsGenerall(),
             ));},
     child: Container(decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(15),
+            color: Colors.grey[300],
+            boxShadow: [
+              BoxShadow(
+                  color: Colors.grey.shade500,
+                  offset: Offset(4.0, 4.0),
+                  blurRadius: 15.0,
+                  spreadRadius: 1.0),
+              BoxShadow(
+                  color: Colors.white,
+                  offset: Offset(-4.0, -4.0),
+                  blurRadius: 15.0,
+                  spreadRadius: 1.0),
+            ],
               image: DecorationImage(
                 image: AssetImage('lib/assets/china24.png'),
                 fit: BoxFit.fill,
