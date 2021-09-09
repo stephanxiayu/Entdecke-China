@@ -1,4 +1,6 @@
+import 'package:china/admob.dart';
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class SCMoring extends StatefulWidget {
@@ -23,10 +25,12 @@ WebViewController controller;
           }
         ),
         
-      ),floatingActionButton: FloatingActionButton(child: Icon(Icons.arrow_back, size: 32,color: Colors.grey,), onPressed: ()async{
-       await Navigator.pop(context);
+      ),floatingActionButton: FloatingActionButton(backgroundColor: Colors.white,
+        child: Icon(Icons.arrow_back, size: 32,color: Colors.grey,), onPressed: ()async{
+   
+    await controller.evaluateJavascript("document.getElementsByTagName('footer')[0].style.display='none'"); 
       }),
-      
+     
     );
   }
 }

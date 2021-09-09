@@ -1,4 +1,5 @@
 import 'package:china/ChinaTable/ueberschrift.dart';
+import 'package:china/ChinaTable/videotable.dart';
 import 'package:china/admob.dart';
 import 'package:china/menschen/menschen.dart';
 import 'package:china/news/news_generall.dart';
@@ -156,7 +157,7 @@ class _StartState extends State<Start> {
           onTap: () => Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => WegWeiser(),
+          builder: (context) => ChinaTableVideos(),
         ),
           ),
           child: Container(

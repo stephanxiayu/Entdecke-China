@@ -14,7 +14,8 @@ javascriptMode: JavascriptMode.unrestricted,
           initialUrl: "http://www.chinadaily.com.cn/",
         ),
       ),
-      floatingActionButton: FloatingActionButton(child: Icon(Icons.arrow_back, size: 32,color: Colors.grey,), onPressed: ()async{
+      floatingActionButton: FloatingActionButton(backgroundColor: Colors.white,
+        child: Icon(Icons.arrow_back, size: 32,color: Colors.grey,), onPressed: ()async{
        await Navigator.pop(context);
       }),
       
