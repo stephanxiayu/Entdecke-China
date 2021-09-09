@@ -20,7 +20,7 @@ class _UserPageState extends State<UserPage> {
   @override
   Widget build(BuildContext context) => Scaffold(backgroundColor: Colors.white,
     appBar: AppBar(
-      backgroundColor: Colors.teal,
+      backgroundColor: Colors.white,
       title: Text(
         user.thema,
         style: TextStyle(

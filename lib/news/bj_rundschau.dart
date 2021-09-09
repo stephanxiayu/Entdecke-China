@@ -13,6 +13,10 @@ class BjRundschau extends StatelessWidget {
           initialUrl: "http://german.beijingreview.com.cn/",
         ),
       ),
+      floatingActionButton: FloatingActionButton(backgroundColor: Colors.white,
+        child: Icon(Icons.arrow_back, size: 32,color: Colors.grey,), onPressed: ()async{
+       await Navigator.pop(context);
+      }),
       
     );
   

@@ -5,6 +5,7 @@ import 'package:china/news/news_generall.dart';
 import 'package:china/unterricht/testlern.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 
 import 'städte/staedte.dart';
@@ -200,7 +201,7 @@ class _StartState extends State<Start> {
           builder: (context) => TestLern(),
         ),
           ),
-          child: Container(
+          child: Container(child: Lottie.network("https://assets6.lottiefiles.com/packages/lf20_gQSfwH.json"),
             decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(15),
             color: Colors.grey[300],

@@ -13,6 +13,9 @@ class EPTimes extends StatelessWidget {
           initialUrl: "https://www.epochtimes.de/china",
         ),
       ),
+      floatingActionButton: FloatingActionButton(child: Icon(Icons.arrow_back, size: 32,color: Colors.grey,), onPressed: ()async{
+       await Navigator.pop(context);
+      }),
       
     );
   }

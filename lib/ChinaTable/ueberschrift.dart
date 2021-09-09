@@ -33,14 +33,9 @@ class _WegWeiserState extends State<WegWeiser> {
     return Scaffold(
         appBar: AppBar(
          
-          backgroundColor: Colors.teal,
-          title: Center(child: Text("Suppenküchen")),
-          leading: new IconButton(
-            icon: new Icon(Icons.arrow_back),
-            onPressed: () {
-              Navigator.of(context).pop();
-            },
-          ),
+          backgroundColor: Colors.white,
+          title: Center(child: Text("Wissen über China", style: TextStyle(color: Colors.grey),)),
+         
         ),
         backgroundColor: Colors.grey[900],
         body: 
